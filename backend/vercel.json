@@ -1,7 +1,13 @@
 {
   "version": 2,
   "name": "Hospital_Management_System",
-  "rewrites": [
+    "builds": [
+    {
+      "src": "*.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
